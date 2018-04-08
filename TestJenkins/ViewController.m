@@ -17,6 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    UILabel *label = [[UILabel alloc] init];
+    label.frame = self.view.bounds;
+    label.text = @"Test Jenkins";
+    label.textAlignment = NSTextAlignmentCenter;
+    [self.view addSubview:label];
 }
 
 
